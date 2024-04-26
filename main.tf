@@ -59,7 +59,7 @@ resource "ibm_is_instance_group_manager" "instance_group_manager" {
 resource "ibm_is_instance_group_manager" "instance_group_manager_scheduled" {
   name           = var.instance_group_manager_name_scheduled
   instance_group = ibm_is_instance_group.instance_group.id
-  manager_type   = var.manager_type.scheduled
+  manager_type   = var.manager_type
   enable_manager = var.enable_manager
 }
 
